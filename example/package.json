@@ -1,0 +1,21 @@
+{
+    "name": "Test Application",
+    "description": "This is some test description",
+    "version": "1.0.0-SNAPSHOT",
+    "author": "Patrick J",
+    "dependencies" : [
+        "gtk+-3.0"
+    ],
+    "scripts": {
+        "run" : "./ {}"
+    },
+    "compiler" : {
+        "flags" : [ "-l somelib" ]
+    },
+    "files" : [
+        "src/",
+        "Test.vala"
+    ],
+    "binary" : "sample-binary",
+    "website" : "https://github.com/pddstudio/vbuild"
+}
