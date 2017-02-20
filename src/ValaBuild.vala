@@ -44,9 +44,6 @@ namespace VBuild {
     }
 
     public static int main(string[] args) {
-        stdout.printf("VBuild - Vala Build System!\n");
-        Builder builder = new Builder ();
-        builder.process_build_config ("package.json");
-        return 0;
+        return ArgumentParser.process_command_arguments (args);
     }
 }
