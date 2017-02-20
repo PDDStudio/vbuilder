@@ -3,6 +3,7 @@
     "description": "This is some test description",
     "version": "1.0.0-SNAPSHOT",
     "author": "Patrick J",
+    "website" : "https://github.com/pddstudio/vbuild",
     "dependencies" : [
         "gtk+-3.0"
     ],
@@ -16,6 +17,5 @@
         "src/",
         "Test.vala"
     ],
-    "binary" : "sample-binary",
-    "website" : "https://github.com/pddstudio/vbuild"
+    "binary" : "sample-binary"
 }
