@@ -63,6 +63,17 @@ namespace VBuild {
 
         //TODO: include compiler flags
 
+        private void print_build_information () {
+            stdout.printf ("\n");
+            stdout.printf ("---- BUILD SUMMARY ----\n");
+            stdout.printf ("Name: %s\n", build_config.name);
+            stdout.printf ("Description: %s\n", build_config.description);
+            stdout.printf ("Version: %s\n", build_config.version);
+            stdout.printf ("Author: %s\n", build_config.author);
+            stdout.printf ("---- BUILD SUMMARY ----\n");
+            stdout.printf ("\n");
+        }
+
         public void start_building () {
             string dep_snippet = build_dependencies_snippet ();
             string target_files = build_files_list ();
@@ -79,6 +90,7 @@ namespace VBuild {
                 builder.append ( binary_name_param );
             }
 
+            print_build_information ();
             execute_build_command (builder.str);
         }
 
