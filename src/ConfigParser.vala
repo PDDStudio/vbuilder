@@ -56,7 +56,6 @@ namespace VBuild {
             foreach (unowned Json.Node node in array.get_elements ()) {
                 if (node != null) {
                     string dep = node.get_string ();
-                    stdout.printf("Found dependency: %s\n", dep);
                     dependency_list.add (dep);
                 } else {
                     stdout.printf("Node is null!\n");
@@ -132,24 +131,6 @@ namespace VBuild {
             ArrayList<string> files = parse_files_array (files_array);
             build_config.build_files = files;
 
-            stdout.printf ("Name: %s\nDesc: %s\nVers: %s\nAuthor: %s\n", name, description, version, author);
-
-            foreach (string flag in flags) {
-                stdout.printf ("Compiler Flag: %s\n", flag);
-            }
-
-            foreach (string file in files) {
-                stdout.printf ("Compiling File: %s\n", file);
-            }
-
-            //iterate through the json object
-            foreach (unowned string item in jsonObject.get_members ()) {
-                if (is_valid_config_entry (item)) {
-                    stdout.printf ("Found Item: %s\n", item);
-                } else {
-                    stdout.printf ("Unknown Item: %s\n", item);
-                }
-            }
             return build_config;
         }
 

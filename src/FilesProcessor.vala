@@ -56,7 +56,6 @@ namespace VBuild {
 
             foreach (string entry in files) {
                 string location = build_file_name (entry);
-                stdout.printf("Processing entry: %s / location: %s\n", entry, location);
                 if (is_directory (location)) {
                     ArrayList<string> dir_content = list_files_in_directory (location);
                     foreach (string dir_file in dir_content) {

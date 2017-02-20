@@ -13,9 +13,7 @@ namespace VBuild {
         }
 
         public void process_build_config (string location) {
-            stdout.printf("processing file: %s\n", location);
             string? file_content = read_package_json (location);
-            stdout.printf("file content:\n%s\n", file_content);
             if (file_content != null) {
                 BuildConfig build_config = config_parser.parse_configuration (file_content);
                 trigger_build_process (build_config);

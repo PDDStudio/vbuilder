@@ -68,10 +68,7 @@ namespace VBuild {
         //TODO: include compiler flags
 
         public void start_building () {
-            stdout.printf ("start_building () invoked!\n");
             string dep_snippet = build_dependencies_snippet ();
-            stdout.printf ("deps => %s\n", dep_snippet);
-
             string target_files = build_files_list ();
 
             var builder = new StringBuilder ();
