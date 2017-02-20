@@ -43,10 +43,6 @@ namespace VBuild {
             return COMPILER_PARAM_OUT +  " " + build_config.binary;
         }
 
-        private void create_shell_command () {
-
-        }
-
         private string build_files_list () {
             var builder = new StringBuilder ();
             foreach (string file in build_config.build_files) {
