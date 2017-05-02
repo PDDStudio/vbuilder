@@ -1,12 +1,12 @@
-##vbuilder
+## vbuilder
 
 > A small build system for `Vala` Projects.
 
-###Description
+### Description
 
 `vbuilder` can be used to build your `Vala`-Projects.
 
-###Usage
+### Usage
 
 A vala project can be build using the following command:
 
@@ -18,9 +18,9 @@ This requires your project to have a `vbuilder` compatible `package.json` file i
 
 For more detailed configuration instructions see the `package.json` example section below.
 
-###Installing `vbuilder`
+### Installing `vbuilder`
 
-####From Source
+#### From Source
 
 As of now, `vbuilder` is only available if you build it from source.
 
@@ -32,7 +32,7 @@ cd vbuilder/
 ./build.sh
 ```
 
-###Building `vbuilder`
+### Building `vbuilder`
 
 Get a copy of this repository and execute the `build.sh` located at the top of this repository.
 
@@ -42,7 +42,7 @@ cd vbuilder/
 ./build.sh
 ```
 
-###`package.json` Example
+### `package.json` Example
 
 Below is an example configuration with all current available fields.
 
