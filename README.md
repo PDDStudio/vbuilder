@@ -1,5 +1,7 @@
 ## vbuilder
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/PDDStudio/vbuilder.svg)](https://greenkeeper.io/)
+
 > A small build system for `Vala` Projects.
 
 ### Description
